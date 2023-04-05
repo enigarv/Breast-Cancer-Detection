@@ -20,7 +20,9 @@ Everything images is annotated with a binary label indicating the presence of me
 
 A dataset of cell images was generated through the NCBI database lymph nodes, to be used as a test set for the developed models. From the **PubMed database** we downloaded all the publications having the key of search «lymph node metastasis breast cancer». Using the **PMID**, the unique code that identifies publications, it was possible to download the relative PDF, through the `pubmed2pdf` library. All the images present have been extracted from the PDF. Through pixel analysis
 content, number and color, it was possible to select those of our interest. For identify the images to keep we analyse the pixel color, their number: an abundant number of pixels belonging to the **purple** range implied that the image was a good candidate to be part of the collection.
-![image](https://user-images.githubusercontent.com/79215142/230111700-a06f7f4a-f13f-448d-b077-84ae916519f3.png){width=50}
+
+
+<img src=https://user-images.githubusercontent.com/79215142/230111700-a06f7f4a-f13f-448d-b077-84ae916519f3.png width=700>
 
 ## Models
 We tested two different approaches:
@@ -30,8 +32,8 @@ We tested two different approaches:
 The models have been trained for 50 epochs, but the training is been interrupted by the Early Stopping in case of absence of improvements.
 
 ## Results
-The first CNN has obtained a $81%$ of accuracy and $71%$ of recall, while the CNN in fine tuning have obtained poor results ($\sim 70% of accuracy and recall$).
-![image2](https://user-images.githubusercontent.com/79215142/230113743-8e34fa20-2ebb-496d-9769-af1b071b36fc.png){width=50}
+The first CNN has obtained a $.81%$ of accuracy and $.71%$ of recall, while the CNN in fine tuning have obtained poor results ($\sim .70% of accuracy and recall$).
+<img src=https://user-images.githubusercontent.com/79215142/230113743-8e34fa20-2ebb-496d-9769-af1b071b36fc.png width=600>
 
 
 
